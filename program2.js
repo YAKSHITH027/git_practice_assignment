@@ -1,8 +1,11 @@
 let str = "aba";
+let e_str=""
 
-for (let i = 0; i < str.length / 2; i++) {
-  if (str[i] != str[str.length - 1 - i]) {
-    console.log("no");
-  }
-  console.log("hfhfi");
+for (let i = str.length-1; i>=0; i--) {
+      e_str=e_str+str[i]
+}
+if(str==e_str){
+  console.log("Palindrome")
+}else{
+  console.log("Not Palindrome")
 }
